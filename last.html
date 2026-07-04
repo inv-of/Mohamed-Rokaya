@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mohamed&Rokaya Engagement Invitation</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      min-height:100vh;
+      overflow:hidden;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-family:'Poppins',sans-serif;
+      background:url("background.jpg") center/cover no-repeat;
+      position:relative;
+    }
+
+    /* Floating Hearts */
+
+    .heart{
+      position:absolute;
+      color:#fff;
+      font-size:20px;
+      animation: float 6s linear infinite;
+      opacity:0.7;
+    }
+
+    @keyframes float{
+      0%{
+        transform:translateY(100vh) scale(0);
+        opacity:0;
+      }
+
+      30%{
+        opacity:0.8;
+      }
+
+      100%{
+        transform:translateY(-120px) scale(1.5);
+        opacity:0;
+      }
+    }
+
+    /* Card */
+
+    .card{
+      width:90%;
+      max-width:420px;
+      background:rgba(255,255,255,0.15);
+      backdrop-filter:blur(12px);
+      border:1px solid rgba(255,255,255,0.2);
+      border-radius:30px;
+      padding:35px 25px;
+      text-align:center;
+      box-shadow:0 10px 40px rgba(0,0,0,0.3);
+      animation:fadeUp 1s ease;
+    }
+
+    @keyframes fadeUp{
+      from{
+        opacity:0;
+        transform:translateY(40px);
+      }
+
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    .title{
+      font-family:'Great Vibes',cursive;
+      font-size:48px;
+      color:white;
+      margin-bottom:10px;
+    }
+
+    .subtitle{
+      color:#622B14;
+      font-size:15px;
+      line-height:1.7;
+      margin-bottom:25px;
+    }
+
+    .location-box{
+      background:rgba(255,255,255,0.18);
+      border-radius:20px;
+      padding:20px;
+      margin-bottom:25px;
+      transition:0.4s;
+      cursor:pointer;
+    }
+
+    .location-box:hover{
+      transform:scale(1.05);
+      background:rgba(255,255,255,0.25);
+    }
+
+    .icon{
+      font-size:45px;
+      margin-bottom:10px;
+    }
+
+    .place{
+      color:#622B14;
+      font-size:24px;
+      font-weight:600;
+      margin-bottom:8px;
+    }
+
+    .address{
+      color:#622B14;
+      font-size:14px;
+      line-height:1.6;
+    }
+
+    .btn{
+      width:100%;
+      padding:15px;
+      border:none;
+      border-radius:15px;
+      background:#622B14;
+      color:#E4D6A9;
+      font-size:17px;
+      font-weight:600;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+      background:#7b3a1c;
+    }
+
+    .tap{
+      margin-top:15px;
+      color:white;
+      font-size:13px;
+      opacity:0.8;
+    }
+
+    /* Responsive Design */
+
+@media (max-width: 768px){
+
+  .card{
+    width:90%;
+    max-width:350px;
+  }
+
+  .cover{
+    height:260px;
+  }
+
+  .title{
+    font-size:18px;
+  }
+
+  .names{
+    font-size:32px;
+  }
+
+  .invite-text{
+    font-size:14px;
+  }
+
+  .date{
+    font-size:22px;
+  }
+
+  .time{
+    font-size:16px;
+  }
+
+  .date-btn{
+    padding:16px;
+  }
+
+}
+
+@media (min-width: 769px){
+
+  .card{
+    max-width:500px;
+  }
+
+  .cover{
+    height:380px;
+  }
+
+  .title{
+    font-size:24px;
+  }
+
+  .names{
+    font-size:48px;
+  }
+
+  .invite-text{
+    font-size:18px;
+  }
+
+  .date{
+    font-size:30px;
+  }
+
+  .time{
+    font-size:20px;
+  }
+  .place{
+    font-size: 24px;
+  }
+
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- Hearts -->
+
+  <span class="heart" style="left:10%; animation-delay:0s;">🤎</span>
+  <span class="heart" style="left:25%; animation-delay:2s;">✨</span>
+  <span class="heart" style="left:50%; animation-delay:4s;">🤍</span>
+  <span class="heart" style="left:75%; animation-delay:1s;">🤎</span>
+  <span class="heart" style="left:90%; animation-delay:3s;">✨</span>
+
+  <!-- Card -->
+
+  <div class="card">
+
+    <div class="title">
+      Our Location
+    </div>
+
+    <div class="subtitle">
+      We can’t wait to celebrate this special day with you ✨
+    </div>
+
+    <div class="location-box"
+    onclick="window.open('https://maps.app.goo.gl/cyRyqS1GQunYsu9s6','_blank')">
+
+      <div class="icon">
+        📍
+      </div>
+
+      <div class="place">
+        Villa vida <br> king mariot
+      </div>
+
+      <div class="address">
+        
+        Tap here to open Google Maps
+      </div>
+
+    </div>
+
+    <button class="btn"
+    onclick="window.open('https://maps.app.goo.gl/cyRyqS1GQunYsu9s6','_blank')">
+      Open Location
+    </button>
+
+    <div class="tap">
+      Click the card or button to navigate 🤎
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mohamed&Rokaya Engagement Invitation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body{
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:20px;
+
+  background-image:url("background.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+    .card{
+      width: 90%;
+      max-width: 450px;
+      background:white;
+      border-radius:25px;
+      overflow:hidden;
+      box-shadow:0 10px 30px #978F66;
+      text-align:center;
+      padding-bottom:30px;
+    }
+
+    .cover{
+      width:100%;
+      height:320px;
+      overflow:hidden;
+    }
+
+    .cover img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .content{
+      padding:25px;
+    }
+
+    .title{
+      font-size:20px;
+      font-family: 'Alex Brush', cursive;
+      color:#622B14;
+      letter-spacing:2px;
+      margin-bottom:10px;
+    }
+
+    .names{
+      font-size:36px;
+      font-family:'Allura', cursive;
+      color:#622B14;
+      font-weight:600;
+      line-height:1.3;
+      margin-bottom:20px;
+    }
+
+  
+
+    .date-btn{
+  width:100%;
+
+  margin-top:25px;
+  padding:18px;
+
+  border:none;
+  border-radius:18px;
+
+  background:#622B14;
+
+  cursor:pointer;
+
+  transition:0.4s;
+}
+
+.date-btn:hover{
+  transform:scale(1.03);
+  background:#7a3a1d;
+}
+
+.date{
+  font-size:24px;
+  color:#E4D6A9;
+  font-family: 'Alex Brush', cursive;
+
+  margin-bottom:8px;
+}
+
+.time{
+  font-size:18px;
+  color:#E4D6A9;
+  font-family: 'Alex Brush', cursive;
+}
+
+    .invite-text{
+  margin-top:15px;
+  color:#622B14;
+  font-size:15px;
+  font-family:'Alex Brush', cursive;
+  line-height:1.6;
+}
+
+.heart{
+  color:red;
+  margin-left:10px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px){
+
+  .card{
+    width:90%;
+    max-width:350px;
+  }
+
+  .cover{
+    height:260px;
+  }
+
+  .title{
+    font-size:18px;
+  }
+
+  .names{
+    font-size:32px;
+  }
+
+  .invite-text{
+    font-size:14px;
+  }
+
+  .date{
+    font-size:22px;
+  }
+
+  .time{
+    font-size:16px;
+  }
+
+  .date-btn{
+    padding:16px;
+  }
+
+}
+
+@media (min-width: 769px){
+
+  .card{
+    max-width:500px;
+  }
+
+  .cover{
+    height:380px;
+  }
+
+  .title{
+    font-size:24px;
+  }
+
+  .names{
+    font-size:48px;
+  }
+
+  .invite-text{
+    font-size:18px;
+  }
+
+  .date{
+    font-size:30px;
+  }
+
+  .time{
+    font-size:20px;
+  }
+
+}
+
+    /* Button */
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="cover">
+     
+      <img src="image.jpg" >
+    </div>
+
+    <div class="content">
+
+      <div class="title">
+        Engagement Invitation
+      </div>
+
+      <div class="names">
+        Mohamed <br> & <br> Rokaya
+      </div>
+
+      <div class="invite-text">
+        We are delighted to invite you to celebrate with us❤️
+      </div>
+
+     <button class="date-btn" onclick="goToPage()">
+
+  <div class="date">
+    30 July 2026
+  </div>
+
+  <div class="time">
+    8:00 PM
+  </div>
+
+</button>
+    </div>
+
+  </div>
+
+</body>
+<script>
+
+  /* Interactive Button */
+
+function goToPage(){
+
+  window.location.href = "second.html";
+
+} 
+
+</script>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mohamed&Rokaya Engagement Invitation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  min-height:100vh;
+  overflow:hidden;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:
+  linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+  url("background.jpg");
+
+  background-size:cover;
+  background-position:center;
+
+  font-family:sans-serif;
+}
+
+/* Floating Hearts */
+
+.hearts{
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
+.hearts span{
+  position:absolute;
+  bottom:-100px;
+
+  color:#ffb6c1;
+  font-size:25px;
+
+  animation:float 10s linear infinite;
+}
+
+.hearts span:nth-child(1){
+  left:10%;
+  animation-duration:8s;
+}
+
+.hearts span:nth-child(2){
+  left:20%;
+  animation-duration:12s;
+}
+
+.hearts span:nth-child(3){
+  left:35%;
+  animation-duration:9s;
+}
+
+.hearts span:nth-child(4){
+  left:50%;
+  animation-duration:11s;
+}
+
+.hearts span:nth-child(5){
+  left:65%;
+  animation-duration:7s;
+}
+
+.hearts span:nth-child(6){
+  left:80%;
+  animation-duration:10s;
+}
+
+.hearts span:nth-child(7){
+  left:90%;
+  animation-duration:13s;
+}
+
+@keyframes float{
+
+  0%{
+    transform:translateY(0) rotate(0deg);
+    opacity:0;
+  }
+
+  20%{
+    opacity:1;
+  }
+
+  100%{
+    transform:translateY(-120vh) rotate(360deg);
+    opacity:0;
+  }
+
+}
+
+/* Countdown Card */
+
+.card{
+  position:relative;
+  z-index:2;
+
+  width:90%;
+  max-width:700px;
+
+  padding:50px 30px;
+
+  border-radius:30px;
+
+  background:rgba(255,255,255,0.12);
+
+  backdrop-filter:blur(15px);
+
+  text-align:center;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:scale(1.03);
+}
+
+.title{
+  font-size:60px;
+  color:#fff;
+      font-family:'Allura', cursive;
+
+  margin-bottom:10px;
+}
+
+.subtitle{
+  color:#f7e7ce;
+  font-size:18px;
+
+  margin-bottom:40px;
+
+  letter-spacing:2px;
+}
+
+/* Countdown */
+
+.countdown{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.box{
+  width:130px;
+  height:130px;
+
+  border-radius:25px;
+
+  background:#622B14;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  transition:0.4s;
+}
+
+.box:hover{
+  transform:translateY(-10px);
+  background:#7a3a1d;
+}
+
+.box h2{
+  color:#E4D6A9;
+  font-size:42px;
+}
+
+.box span{
+  color:white;
+  margin-top:5px;
+  letter-spacing:2px;
+  font-size:14px;
+}
+
+/* Button */
+
+.btn{
+  margin-top:40px;
+
+  padding:15px 35px;
+
+  border:none;
+  border-radius:50px;
+
+  background:#E4D6A9;
+  color:#622B14;
+
+  font-size:16px;
+  cursor:pointer;
+
+  transition:0.4s;
+}
+
+.btn:hover{
+  transform:scale(1.1);
+  background:white;
+}
+
+.message{
+  margin-top:20px;
+  color:white;
+  font-size:18px;
+
+  opacity:0;
+  transition:0.5s;
+}
+
+.show{
+  opacity:1;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px){
+
+  .card{
+    width:90%;
+    max-width:350px;
+  }
+
+  .cover{
+    height:260px;
+  }
+
+  .title{
+    font-size:18px;
+  }
+
+  .names{
+    font-size:32px;
+  }
+
+  .invite-text{
+    font-size:14px;
+  }
+
+  .date{
+    font-size:22px;
+  }
+
+  .time{
+    font-size:16px;
+  }
+
+  .date-btn{
+    padding:16px;
+  }
+
+}
+
+@media (min-width: 769px){
+
+  .card{
+    max-width:500px;
+  }
+
+  .cover{
+    height:380px;
+  }
+
+  .title{
+    font-size:32px;
+  }
+
+  .names{
+    font-size:48px;
+  }
+
+  .invite-text{
+    font-size:18px;
+  }
+
+  .date{
+    font-size:30px;
+  }
+
+  .time{
+    font-size:20px;
+  }
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+
+<div class="hearts">
+
+  <span>❤</span>
+  <span>❤</span>
+  <span>❤</span>
+  <span>❤</span>
+  <span>❤</span>
+  <span>❤</span>
+  <span>❤</span>
+
+</div>
+
+<!-- Card -->
+
+<div class="card">
+
+  <div class="title">
+    M & R
+  </div>
+
+  <div class="subtitle">
+    Countdown To Our Special Day ❤
+  </div>
+
+  <div class="countdown">
+
+    <div class="box">
+      <h2 id="days">00</h2>
+      <span>Days</span>
+    </div>
+
+    <div class="box">
+      <h2 id="hours">00</h2>
+      <span>Hours</span>
+    </div>
+
+    <div class="box">
+      <h2 id="minutes">00</h2>
+      <span>Minutes</span>
+    </div>
+
+    <div class="box">
+      <h2 id="seconds">00</h2>
+      <span>Seconds</span>
+    </div>
+
+  </div>
+
+  <button class="btn" onclick="goToPage()">
+  Click Here ❤️
+</button>
+
+
+</div>
+
+<script>
+
+/* Countdown */
+
+const targetDate = new Date("July 30, 2026 20:00:00").getTime();
+
+function updateCountdown(){
+
+  const now = new Date().getTime();
+
+  const distance = targetDate - now;
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+  const hours = Math.floor(
+    (distance % (1000 * 60 * 60 * 24))
+    / (1000 * 60 * 60)
+  );
+
+  const minutes = Math.floor(
+    (distance % (1000 * 60 * 60))
+    / (1000 * 60)
+  );
+
+  const seconds = Math.floor(
+    (distance % (1000 * 60))
+    / 1000
+  );
+
+  document.getElementById("days").innerHTML = days;
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
+
+}
+
+setInterval(updateCountdown, 1000);
+
+updateCountdown();
+
+/* Interactive Button */
+
+function goToPage(){
+
+  window.location.href = "last.html";
+
+}
+
+</script>
+
+</body>
+</html>
